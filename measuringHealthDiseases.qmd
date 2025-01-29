@@ -1,0 +1,255 @@
+---
+title: "Measuring Health and Disease in Populations"
+subtitle: "Eric Delmelle"
+format: revealjs
+---
+
+```{=html}
+<style>
+ul {
+  font-size: 85%;
+}
+
+ul ul {
+  font-size: 75%;
+}
+</style>
+```
+## [**Introduction**]{style="color: teal;"}
+
+### [**Key Concepts in Measuring Health and Disease**]{style="color: pink;"}
+
+-   Definitions of incidence and prevalence.
+-   Importance of population health metrics.
+
+------------------------------------------------------------------------
+
+## [**Incidence and Prevalence**]{style="color: teal;"}
+
+### [**Definitions**]{style="color: pink;"}
+
+-   **Incidence:** Number of new cases in a specified time period.
+    -   Formula: `(New cases during time period / Population at risk) × multiplier`.
+-   **Prevalence:** Total number of existing cases at a given time.
+    -   Formula: `(Existing cases / Total population) × multiplier`.
+
+### [**Differences**]{style="color: pink;"}
+
+-   Incidence: Measures risk; useful for studying causation.
+-   Prevalence: Measures disease burden; important for planning healthcare services.
+
+------------------------------------------------------------------------
+
+## [**Impact of New and Existing Cases**]{style="color: teal;"}
+
+-   **Prevalence Formula Relation:**
+    -   `Prevalence = Incidence × Duration of Disease`
+    -   check this [youTube](https://s4be.cochrane.org/blog/2020/11/06/prevalence-vs-incidence-what-is-the-difference/){.uri} video
+-   **Factors affecting prevalence:**
+    -   **Increase:** Longer disease duration, improved survival without a cure.
+    -   **Decrease:** Shorter duration, high mortality rates, or prevention.
+
+------------------------------------------------------------------------
+
+## [**Rates, Ratios, and Proportions**]{style="color: teal;"}
+
+-   **Rate:** A measure of change per unit time (e.g., incidence density).
+    -   *pay attention to **rate instability***
+-   **Ratio:** Comparison of two numbers, unrelated (e.g., sex ratio).
+-   **Proportion:** A part of a whole (e.g., percentage of women in a study group).
+
+------------------------------------------------------------------------
+
+## [**Cumulative incidence**]{style="color: teal;"}
+
+-   **Proportion** of an initially disease-free group of individuals who develop the disease within a specified period of observation.
+
+    -   *pay attention to **censoring*** $$ CI = \frac{\text{new cases}}{\text{# individuals at start of the period}} $$
+
+-   Example: Start with **100 disease-free individuals**. After **one year, 10 develop the disease**.
+
+    $$ CI = \frac{10}{100} = 0.10$$
+
+-   After **one year**, **10% of the population developed the disease**.
+
+------------------------------------------------------------------------
+
+## [**Incidence density**]{style="color: teal;"}
+
+-   **Rate** that measures how often new cases of a disease occur while accounting for different lengths of time that people are at risk $$ ID = \frac{\text{new cases}}{\text{total person-time at risk}}$$
+
+-   Study follows **5 individuals**:
+
+    -   **Person A:** 2 years at risk\
+    -   **Person B:** 3 years at risk\
+    -   **Person C:** 1 year at risk\
+    -   **Person D:** 4 years at risk\
+    -   **Person E:** 2 years at risk
+
+-   **Total person-time at risk** = **2 + 3 + 1 + 4 + 2 = 12 person-years**
+
+------------------------------------------------------------------------
+
+## [**Incidence density**]{style="color: teal;"}
+
+-   **Total person-time at risk** = **2 + 3 + 1 + 4 + 2 = 12 person-years**
+-   **New cases = 3**
+
+$$ ID = \frac{3}{12} = 0.25 \text{ cases per person-year} $$
+
+-   **0.25 cases per person-year** means that, on average, for every 4 people followed for a year, 1 will develop the disease.
+
+------------------------------------------------------------------------
+
+## [**Population Structure**]{style="color: teal;"}
+
+### [**Age Pyramids**]{style="color: pink;"}
+
+-   Graphical representation of age and sex distribution.
+-   Shows aging trends, and reveals impact of demographic events like wars, migrations.
+
+![](imgs/Dtm_pyramids.jpg){fig-align="center"}
+
+------------------------------------------------------------------------
+
+### [**Age Pyramids**]{style="color: pink;"}
+
+![](imgs/Dtm_pyramids.jpg){fig-align="center"}
+
+-   **Developed Countries:** Narrow base, wider top (aging population).
+-   **Developing Countries:** Broad base, narrow top (younger population).
+-   [Interactive](https://www.populationpyramid.net/){.uri} pyramid.
+
+## [**Demographic Changes and Health Metrics**]{style="color: teal;"}
+
+-   **Fertility Rate:** Key measure of reproductive behavior.
+-   **Mortality:** Affects life expectancy and health metrics.
+-   **Migration:** Alters population composition, health service demands.
+
+------------------------------------------------------------------------
+
+## [**Preston Curve**]{style="color: teal;"}
+
+### [**GDP vs. Life Expectancy**]{style="color: pink;"}
+
+-   How do country's economic status and life expectancy relate?
+    -   Higher GDP often correlates with longer life expectancy.
+    -   Plateau effect beyond a certain GDP.
+
+![](imgs/prestonA.jpg){fig-align="center"}
+
+------------------------------------------------------------------------
+
+## [**Preston Curve**]{style="color: teal;"}
+
+-   **A**: the new technology is equally applicable in all countries regardless of their level of income.
+-   **B**: the new technology has a disproportionately larger effect in rich countries.
+-   **C**: poorer countries benefit more.
+
+![](imgs/prestonB.jpg){fig-align="center"}
+
+------------------------------------------------------------------------
+
+## [**Rectangularization of Life Expectancy**]{style="color: teal;"}
+
+-   Survival curves become more rectangular as mortality compresses toward older ages.
+-   **Implications:**
+    -   Shift to chronic diseases as leading health concerns.
+    -   Need for age-specific interventions.
+
+------------------------------------------------------------------------
+
+## [**Aging Populations**]{style="color: teal;"}
+
+-   **Trends:**
+    -   Increasing proportion of elderly.
+    -   Dependency ratios rise, impacting economic and health systems.
+
+![](imgs/life-expectancy-cumulative-over-200-years.png){fig-align="center"}
+
+------------------------------------------------------------------------
+
+## [**Aging Populations**]{style="color: teal;"} 
+
+![](imgs/percentSurviving.jpg){fig-align="center"}
+
+------------------------------------------------------------------------
+
+## [**Aging Populations**]{style="color: teal;"} 
+
+![](imgs/percentSurvivingB.jpg)
+
+------------------------------------------------------------------------
+
+## [**Aging Populations**]{style="color: teal;"}
+
+-   **Policy Implications:**
+    -   Need for long-term care services.
+    -   Redesign of healthcare systems.
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+
+## [**Interactive Activity**]{style="color: teal;"}
+
+::: {.columns}
+
+::: {.column width="45%" style="font-size: 18px; line-height: 1.2;"}
+
+- **Group A**: Kayla H., Sammie C., Chloe L., Henry S., Vedanth V.  
+- **Group B**: Prashant K., Lillian L., Ashley P., Cate M., Emily T.  
+- **Group C**: Shriya P., Evy W., Caithlyn C., Grace S.  
+- **Group D**: Chris C., Olivia N., Aaron C., Lola S., Alicia A.  
+- **Group E**: Elmira S., Sebastian S., Mina C., Hudson K., Marwa A.  
+- **Group F**: Abena A., Xiomara G., Natalie W., Neves H.  
+- **Group G**: Sophie P., Jessica L.,Joy L., , Vladimir V.
+
+:::
+
+::: {.column width="55%" style="font-size: 20px; line-height: 1.4;"}
+
+### Analysis Instructions
+
+-   Analyze an example population pyramid.
+-   Predict changes over 20 years based on fertility and mortality trends.
+  -   [fertility trend and mortality](https://data.worldbank.org/indicator/SP.DYN.TFRT.IN){.uri} 
+
+$$
+P(t) = P_0 \times \left(1 + \frac{B - D}{1000} \right)^t
+$$
+Where:
+
+- $P(t)$: The **population** at time $t$, after $t$ years.
+- $P_0$: The **current population** (the population at time $t = 0$).
+- $B$: The **birth rate**, expressed as the number of **births per 1,000 people** per year.
+- $D$: The **death rate**, expressed as the number of **deaths per 1,000 people** per year.
+- $t$: The **number of years** into the future you are projecting (e.g., 20 years).
+
+:::
+
+:::
+
+------------------------------------------------------------------------
+
+## [**Summary**]{style="color: teal;"}
+
+### [**Key Takeaways**]{style="color: pink;"}
+
+-   Differences between incidence and prevalence.
+-   Importance of understanding demographic changes.
+-   Using tools like age pyramids to predict health trends.
+
+### [**Discussion Questions**]{style="color: pink;"}
+
+-   How do changes in prevalence reflect healthcare advances?
+-   What policies can address the challenges of aging populations?
+
+------------------------------------------------------------------------
+
+## [**References**]{style="color: teal;"}
+
+1.  Young, T. K. (2004). Population Health: Concepts and Methods.
+2.  WHO Reports on Health Metrics.
+3.  National Center for Health Statistics.
