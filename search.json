@@ -1,0 +1,135 @@
+[
+  {
+    "objectID": "measuringHealthDiseases.html#introduction",
+    "href": "measuringHealthDiseases.html#introduction",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Introduction",
+    "text": "Introduction\nKey Concepts in Measuring Health and Disease\n\nDefinitions of incidence and prevalence.\nImportance of population health metrics."
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#incidence-and-prevalence",
+    "href": "measuringHealthDiseases.html#incidence-and-prevalence",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Incidence and Prevalence",
+    "text": "Incidence and Prevalence\nDefinitions\n\nIncidence: Number of new cases in a specified time period.\n\nFormula: (New cases during time period / Population at risk) × multiplier.\n\nPrevalence: Total number of existing cases at a given time.\n\nFormula: (Existing cases / Total population) × multiplier.\n\n\nDifferences\n\nIncidence: Measures risk; useful for studying causation.\nPrevalence: Measures disease burden; important for planning healthcare services."
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#impact-of-new-and-existing-cases",
+    "href": "measuringHealthDiseases.html#impact-of-new-and-existing-cases",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Impact of New and Existing Cases",
+    "text": "Impact of New and Existing Cases\n\nPrevalence Formula Relation:\n\nPrevalence = Incidence × Duration of Disease\ncheck this youTube video\n\nFactors affecting prevalence:\n\nIncrease: Longer disease duration, improved survival without a cure.\nDecrease: Shorter duration, high mortality rates, or prevention."
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#rates-ratios-and-proportions",
+    "href": "measuringHealthDiseases.html#rates-ratios-and-proportions",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Rates, Ratios, and Proportions",
+    "text": "Rates, Ratios, and Proportions\n\nRate: A measure of change per unit time (e.g., incidence density).\n\npay attention to rate instability\n\nRatio: Comparison of two numbers, unrelated (e.g., sex ratio).\nProportion: A part of a whole (e.g., percentage of women in a study group)."
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#cumulative-incidence",
+    "href": "measuringHealthDiseases.html#cumulative-incidence",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Cumulative incidence",
+    "text": "Cumulative incidence\n\nProportion of an initially disease-free group of individuals who develop the disease within a specified period of observation.\n\npay attention to censoring \\[ CI = \\frac{\\text{new cases}}{\\text{# individuals at start of the period}} \\]\n\nExample: Start with 100 disease-free individuals. After one year, 10 develop the disease.\n\\[ CI = \\frac{10}{100} = 0.10\\]\nAfter one year, 10% of the population developed the disease."
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#incidence-density",
+    "href": "measuringHealthDiseases.html#incidence-density",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Incidence density",
+    "text": "Incidence density\n\nRate that measures how often new cases of a disease occur while accounting for different lengths of time that people are at risk \\[ ID = \\frac{\\text{new cases}}{\\text{total person-time at risk}}\\]\nStudy follows 5 individuals:\n\nPerson A: 2 years at risk\n\nPerson B: 3 years at risk\n\nPerson C: 1 year at risk\n\nPerson D: 4 years at risk\n\nPerson E: 2 years at risk\n\nTotal person-time at risk = 2 + 3 + 1 + 4 + 2 = 12 person-years"
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#incidence-density-1",
+    "href": "measuringHealthDiseases.html#incidence-density-1",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Incidence density",
+    "text": "Incidence density\n\nTotal person-time at risk = 2 + 3 + 1 + 4 + 2 = 12 person-years\nNew cases = 3\n\n\\[ ID = \\frac{3}{12} = 0.25 \\text{ cases per person-year} \\]\n\n0.25 cases per person-year means that, on average, for every 4 people followed for a year, 1 will develop the disease."
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#population-structure",
+    "href": "measuringHealthDiseases.html#population-structure",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Population Structure",
+    "text": "Population Structure\nAge Pyramids\n\nGraphical representation of age and sex distribution.\nShows aging trends, and reveals impact of demographic events like wars, migrations."
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#demographic-changes-and-health-metrics",
+    "href": "measuringHealthDiseases.html#demographic-changes-and-health-metrics",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Demographic Changes and Health Metrics",
+    "text": "Demographic Changes and Health Metrics\n\nFertility Rate: Key measure of reproductive behavior.\nMortality: Affects life expectancy and health metrics.\nMigration: Alters population composition, health service demands."
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#preston-curve",
+    "href": "measuringHealthDiseases.html#preston-curve",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Preston Curve",
+    "text": "Preston Curve\nGDP vs. Life Expectancy\n\nHow do country’s economic status and life expectancy relate?\n\nHigher GDP often correlates with longer life expectancy.\nPlateau effect beyond a certain GDP."
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#preston-curve-1",
+    "href": "measuringHealthDiseases.html#preston-curve-1",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Preston Curve",
+    "text": "Preston Curve\n\nA: the new technology is equally applicable in all countries regardless of their level of income.\nB: the new technology has a disproportionately larger effect in rich countries.\nC: poorer countries benefit more."
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#rectangularization-of-life-expectancy",
+    "href": "measuringHealthDiseases.html#rectangularization-of-life-expectancy",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Rectangularization of Life Expectancy",
+    "text": "Rectangularization of Life Expectancy\n\nSurvival curves become more rectangular as mortality compresses toward older ages.\nImplications:\n\nShift to chronic diseases as leading health concerns.\nNeed for age-specific interventions."
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#aging-populations",
+    "href": "measuringHealthDiseases.html#aging-populations",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Aging Populations",
+    "text": "Aging Populations\n\nTrends:\n\nIncreasing proportion of elderly.\nDependency ratios rise, impacting economic and health systems."
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#aging-populations-1",
+    "href": "measuringHealthDiseases.html#aging-populations-1",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Aging Populations",
+    "text": "Aging Populations"
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#aging-populations-2",
+    "href": "measuringHealthDiseases.html#aging-populations-2",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Aging Populations",
+    "text": "Aging Populations"
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#aging-populations-3",
+    "href": "measuringHealthDiseases.html#aging-populations-3",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Aging Populations",
+    "text": "Aging Populations\n\nPolicy Implications:\n\nNeed for long-term care services.\nRedesign of healthcare systems."
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#interactive-activity",
+    "href": "measuringHealthDiseases.html#interactive-activity",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Interactive Activity",
+    "text": "Interactive Activity\n\n\n\nGroup A: Kayla H., Sammie C., Chloe L., Henry S., Vedanth V.\n\nGroup B: Prashant K., Lillian L., Ashley P., Cate M., Emily T.\n\nGroup C: Shriya P., Evy W., Caithlyn C., Grace S.\n\nGroup D: Chris C., Olivia N., Aaron C., Lola S., Alicia A.\n\nGroup E: Elmira S., Sebastian S., Mina C., Hudson K., Marwa A.\n\nGroup F: Abena A., Xiomara G., Natalie W., Neves H.\n\nGroup G: Sophie P., Jessica L.,Joy L., , Vladimir V.\n\n\nAnalysis Instructions\n\nAnalyze an example population pyramid.\nPredict changes over 20 years based on fertility and mortality trends.\nfertility trend and mortality\n\n\\[\nP(t) = P_0 \\times \\left(1 + \\frac{B - D}{1000} \\right)^t\n\\] Where:\n\n\\(P(t)\\): The population at time \\(t\\), after \\(t\\) years.\n\\(P_0\\): The current population (the population at time \\(t = 0\\)).\n\\(B\\): The birth rate, expressed as the number of births per 1,000 people per year.\n\\(D\\): The death rate, expressed as the number of deaths per 1,000 people per year.\n\\(t\\): The number of years into the future you are projecting (e.g., 20 years)."
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#summary",
+    "href": "measuringHealthDiseases.html#summary",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Summary",
+    "text": "Summary\nKey Takeaways\n\nDifferences between incidence and prevalence.\nImportance of understanding demographic changes.\nUsing tools like age pyramids to predict health trends.\n\nDiscussion Questions\n\nHow do changes in prevalence reflect healthcare advances?\nWhat policies can address the challenges of aging populations?"
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#references",
+    "href": "measuringHealthDiseases.html#references",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "References",
+    "text": "References\n\nYoung, T. K. (2004). Population Health: Concepts and Methods.\nWHO Reports on Health Metrics.\nNational Center for Health Statistics."
+  }
+]
