@@ -1,6 +1,6 @@
 ---
 title: "Measuring Health and Disease in Populations"
-subtitle: "Eric Delmelle"
+subtitle: "Eric Delmelle <br> Jan 29 - Feb 5 - Feb 10, 2024"
 format: revealjs
 ---
 
@@ -21,6 +21,8 @@ ul ul {
 
 -   Definitions of incidence and prevalence.
 -   Importance of population health metrics.
+-   Ageing in the population
+-   Demographic transition
 
 ------------------------------------------------------------------------
 
@@ -101,6 +103,15 @@ $$ ID = \frac{3}{12} = 0.25 \text{ cases per person-year} $$
 
 ------------------------------------------------------------------------
 
+## [**Demographic Changes and Health Metrics**]{style="color: teal;"}
+
+-   **Fertility Rate:** Key measure of reproductive behavior.
+-   **Mortality:** Affects life expectancy and health metrics.
+-   **Migration:** Alters population composition, health service demands.
+
+
+------------------------------------------------------------------------
+
 ## [**Population Structure**]{style="color: teal;"}
 
 ### [**Age Pyramids**]{style="color: pink;"}
@@ -120,11 +131,47 @@ $$ ID = \frac{3}{12} = 0.25 \text{ cases per person-year} $$
 -   **Developing Countries:** Broad base, narrow top (younger population).
 -   [Interactive](https://www.populationpyramid.net/){.uri} pyramid.
 
-## [**Demographic Changes and Health Metrics**]{style="color: teal;"}
 
--   **Fertility Rate:** Key measure of reproductive behavior.
--   **Mortality:** Affects life expectancy and health metrics.
--   **Migration:** Alters population composition, health service demands.
+------------------------------------------------------------------------
+
+### [**Qatar Age Pyramid**]{style="color: pink;"}
+
+::: {.columns}
+
+::: {.column width="60%"}
+![](imgs/qatarPyramid.jpg){fig-align="center" width="100%"}
+:::
+
+::: {.column width="40%"}
+![](imgs/qatarQR.jpg){fig-align="center" width="100%"}
+:::
+
+:::
+
+
+------------------------------------------------------------------------
+
+## [**Interactive Activity**]{style="color: teal;"}
+
+::: columns
+::: {.column width="45%" style="font-size: 18px; line-height: 1.2;"}
+-   **Group A**: Kayla H., Sammie C., Chloe L., Henry S., Vedanth V.\
+-   **Group B**: Prashant K., Lillian L., Ashley P., Cate M., Emily T.\
+-   **Group C**: Shriya P., Evy W., Caithlyn C., Grace S.\
+-   **Group D**: Chris C., Olivia N., Aaron C., Lola S., Alicia A.\
+-   **Group E**: Elmira S., Sebastian S., Mina C., Hudson K., Marwa A.\
+-   **Group F**: Abena A., Xiomara G., Natalie W., Neves H.\
+-   **Group G**: Sophie P., Jessica L.,Joy L., Vladimir V.
+:::
+
+::: {.column width="55%" style="font-size: 30px; line-height: 1.4;"}
+### Analysis Instructions
+
+-   Choose an age pyramid.
+-   Explain to class what you see and what you expect the population to look like
+in 15, 30 and 50 years.
+:::
+:::
 
 ------------------------------------------------------------------------
 
@@ -150,15 +197,6 @@ $$ ID = \frac{3}{12} = 0.25 \text{ cases per person-year} $$
 
 ------------------------------------------------------------------------
 
-## [**Rectangularization of Life Expectancy**]{style="color: teal;"}
-
--   Survival curves become more rectangular as mortality compresses toward older ages.
--   **Implications:**
-    -   Shift to chronic diseases as leading health concerns.
-    -   Need for age-specific interventions.
-
-------------------------------------------------------------------------
-
 ## [**Aging Populations**]{style="color: teal;"}
 
 -   **Trends:**
@@ -169,15 +207,93 @@ $$ ID = \frac{3}{12} = 0.25 \text{ cases per person-year} $$
 
 ------------------------------------------------------------------------
 
-## [**Aging Populations**]{style="color: teal;"} 
+## [**Aging Populations**]{style="color: teal;"}
 
 ![](imgs/percentSurviving.jpg){fig-align="center"}
 
 ------------------------------------------------------------------------
 
-## [**Aging Populations**]{style="color: teal;"} 
+## [**Aging Populations**]{style="color: teal;"}
 
 ![](imgs/percentSurvivingB.jpg)
+
+------------------------------------------------------------------------
+
+## [**Rectangularization of Life Expectancy**]{style="color: teal;"}
+
+-   Survival curves become more rectangular as mortality compresses toward older ages.
+-   **Implications:**
+    -   Shift to chronic diseases as leading health concerns.
+    -   Need for age-specific interventions.
+
+------------------------------------------------------------------------
+
+### [**Survival curves in Sweden**]{style="color: pink;"}
+
+![](imgs/survivalSweden.png){fig-align="center" width="510"}
+
+[Source: Schoder, J., & Zweifel, P. (2011). Flat-of-the-curve medicine: a new perspective on the production of health. Health Economics Review, 1, 1-10.]{style="font-size: 0.6em;"}
+
+------------------------------------------------------------------------
+
+### [**Survival curves in USA**]{style="color: pink;"}
+
+![](imgs/survivalUSA.png){fig-align="center" width="503"}
+
+[Source: Bell, F. C., & Miller, M. L. (2005). Life tables for the United States social security area, 1900-2100 (No. 120). Social Security Administration, Office of the Chief Actuary.]{style="font-size: 0.6em;"}
+
+------------------------------------------------------------------------
+
+### [**Mentimer survey**]{style="color: pink;"}
+
+Do you think we could get a complete rectangularization of the survival curve?
+
+![](imgs/menti1.jpg){fig-align="center" width="267"}
+
+![](imgs/menti1b.jpg){fig-align="center" width="212"}
+
+------------------------------------------------------------------------
+
+## [**Fertility**]{style="color: teal;"}
+
+-   **Some definitions**
+    -   *crude birth rate (CBR)*: number of births per 1,000 population per year. The denominator, however, refers to the total population, including men and boys, young girls and old women!
+    -   *general fertility rate (GFR)*: restricts inclusion in its denominator only to women in the reproductive age range
+    -   *total fertility rate (TFR)*: summing all age-specific fertility rates for women in the childbearing ages.
+
+------------------------------------------------------------------------
+
+### [**Birth rates in US, Canada, Mexico**]{style="color: pink;"}
+
+![](imgs/birthRate.jpg){fig-align="center"}
+
+------------------------------------------------------------------------
+
+### [**Deriving Total Fertility Rate**]{style="color: pink;"}
+
+::: columns
+::: {.column width="40%"}
+#### Age-Specific Fertility Rates (ASFRs) for the U.S. (2000)
+
+<small> - **15--19**: 48.5/1,000\
+- **20--24**: 112.3/1,000\
+- **25--29**: 121.4/1,000\
+- **30--34**: 94.1/1,000\
+- **35--39**: 40.4/1,000\
+- **40--44**: 7.9/1,000\
+- **45--49**: 0.5/1,000
+
+**Total:** 425/1,000\
+</small>
+:::
+
+::: {.column width="60%"}
+#### Explanation
+
+[ - The ASFR represents the birth rate per 1,000 women in each age group.\
+- Summing the ASFRs gives **425/1,000** for all age groups. - <br>Since each ASFR represents a **five-year** average, multiplying by 5 gives **2,125/1,000**. This means the **TFR = 2.1 births per woman**, the replacement-level fertility rate typical of developed countries. Including **ages 10--14 or 50--54** has little impact on the overall TFR. ]{style="font-size: 70%"}
+:::
+:::
 
 ------------------------------------------------------------------------
 
@@ -189,46 +305,36 @@ $$ ID = \frac{3}{12} = 0.25 \text{ cases per person-year} $$
 
 ------------------------------------------------------------------------
 
-
-------------------------------------------------------------------------
-
 ## [**Interactive Activity**]{style="color: teal;"}
 
-::: {.columns}
-
+::: columns
 ::: {.column width="45%" style="font-size: 18px; line-height: 1.2;"}
-
-- **Group A**: Kayla H., Sammie C., Chloe L., Henry S., Vedanth V.  
-- **Group B**: Prashant K., Lillian L., Ashley P., Cate M., Emily T.  
-- **Group C**: Shriya P., Evy W., Caithlyn C., Grace S.  
-- **Group D**: Chris C., Olivia N., Aaron C., Lola S., Alicia A.  
-- **Group E**: Elmira S., Sebastian S., Mina C., Hudson K., Marwa A.  
-- **Group F**: Abena A., Xiomara G., Natalie W., Neves H.  
-- **Group G**: Sophie P., Jessica L.,Joy L., , Vladimir V.
-
+-   **Group A**: Kayla H., Sammie C., Chloe L., Henry S., Vedanth V.\
+-   **Group B**: Prashant K., Lillian L., Ashley P., Cate M., Emily T.\
+-   **Group C**: Shriya P., Evy W., Caithlyn C., Grace S.\
+-   **Group D**: Chris C., Olivia N., Aaron C., Lola S., Alicia A.\
+-   **Group E**: Elmira S., Sebastian S., Mina C., Hudson K., Marwa A.\
+-   **Group F**: Abena A., Xiomara G., Natalie W., Neves H.\
+-   **Group G**: Sophie P., Jessica L.,Joy L., Vladimir V.
 :::
 
 ::: {.column width="55%" style="font-size: 20px; line-height: 1.4;"}
-
 ### Analysis Instructions
 
 -   Analyze an example population pyramid.
 -   Predict changes over 20 years based on fertility and mortality trends.
-  -   [fertility trend and mortality](https://data.worldbank.org/indicator/SP.DYN.TFRT.IN){.uri} 
+-   [fertility trend and mortality](https://data.worldbank.org/indicator/SP.DYN.TFRT.IN){.uri}
 
 $$
 P(t) = P_0 \times \left(1 + \frac{B - D}{1000} \right)^t
-$$
-Where:
+$$ Where:
 
-- $P(t)$: The **population** at time $t$, after $t$ years.
-- $P_0$: The **current population** (the population at time $t = 0$).
-- $B$: The **birth rate**, expressed as the number of **births per 1,000 people** per year.
-- $D$: The **death rate**, expressed as the number of **deaths per 1,000 people** per year.
-- $t$: The **number of years** into the future you are projecting (e.g., 20 years).
-
+-   $P(t)$: The **population** at time $t$, after $t$ years.
+-   $P_0$: The **current population** (the population at time $t = 0$).
+-   $B$: The **birth rate**, expressed as the number of **births per 1,000 people** per year.
+-   $D$: The **death rate**, expressed as the number of **deaths per 1,000 people** per year.
+-   $t$: The **number of years** into the future you are projecting (e.g., 20 years).
 :::
-
 :::
 
 ------------------------------------------------------------------------
