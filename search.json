@@ -4,7 +4,7 @@
     "href": "measuringHealthDiseases.html#introduction",
     "title": "Measuring Health and Disease in Populations",
     "section": "Introduction",
-    "text": "Introduction\nKey Concepts in Measuring Health and Disease\n\nDefinitions of incidence and prevalence.\nImportance of population health metrics."
+    "text": "Introduction\nKey Concepts in Measuring Health and Disease\n\nDefinitions of incidence and prevalence.\nImportance of population health metrics.\nAgeing in the population\nDemographic transition"
   },
   {
     "objectID": "measuringHealthDiseases.html#incidence-and-prevalence",
@@ -49,6 +49,13 @@
     "text": "Incidence density\n\nTotal person-time at risk = 2 + 3 + 1 + 4 + 2 = 12 person-years\nNew cases = 3\n\n\\[ ID = \\frac{3}{12} = 0.25 \\text{ cases per person-year} \\]\n\n0.25 cases per person-year means that, on average, for every 4 people followed for a year, 1 will develop the disease."
   },
   {
+    "objectID": "measuringHealthDiseases.html#demographic-changes-and-health-metrics",
+    "href": "measuringHealthDiseases.html#demographic-changes-and-health-metrics",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Demographic Changes and Health Metrics",
+    "text": "Demographic Changes and Health Metrics\n\nFertility Rate: Key measure of reproductive behavior.\nMortality: Affects life expectancy and health metrics.\nMigration: Alters population composition, health service demands."
+  },
+  {
     "objectID": "measuringHealthDiseases.html#population-structure",
     "href": "measuringHealthDiseases.html#population-structure",
     "title": "Measuring Health and Disease in Populations",
@@ -56,11 +63,11 @@
     "text": "Population Structure\nAge Pyramids\n\nGraphical representation of age and sex distribution.\nShows aging trends, and reveals impact of demographic events like wars, migrations."
   },
   {
-    "objectID": "measuringHealthDiseases.html#demographic-changes-and-health-metrics",
-    "href": "measuringHealthDiseases.html#demographic-changes-and-health-metrics",
+    "objectID": "measuringHealthDiseases.html#interactive-activity",
+    "href": "measuringHealthDiseases.html#interactive-activity",
     "title": "Measuring Health and Disease in Populations",
-    "section": "Demographic Changes and Health Metrics",
-    "text": "Demographic Changes and Health Metrics\n\nFertility Rate: Key measure of reproductive behavior.\nMortality: Affects life expectancy and health metrics.\nMigration: Alters population composition, health service demands."
+    "section": "Interactive Activity",
+    "text": "Interactive Activity\n\n\n\nGroup A: Kayla H., Sammie C., Chloe L., Henry S., Vedanth V.\n\nGroup B: Prashant K., Lillian L., Ashley P., Cate M., Emily T.\n\nGroup C: Shriya P., Evy W., Caithlyn C., Grace S.\n\nGroup D: Chris C., Olivia N., Aaron C., Lola S., Alicia A.\n\nGroup E: Elmira S., Sebastian S., Mina C., Hudson K., Marwa A.\n\nGroup F: Abena A., Xiomara G., Natalie W., Neves H.\n\nGroup G: Sophie P., Jessica L.,Joy L., Vladimir V.\n\n\nAnalysis Instructions\n\nChoose an age pyramid.\nExplain to class what you see and what you expect the population to look like in 15, 30 and 50 years."
   },
   {
     "objectID": "measuringHealthDiseases.html#preston-curve",
@@ -75,13 +82,6 @@
     "title": "Measuring Health and Disease in Populations",
     "section": "Preston Curve",
     "text": "Preston Curve\n\nA: the new technology is equally applicable in all countries regardless of their level of income.\nB: the new technology has a disproportionately larger effect in rich countries.\nC: poorer countries benefit more."
-  },
-  {
-    "objectID": "measuringHealthDiseases.html#rectangularization-of-life-expectancy",
-    "href": "measuringHealthDiseases.html#rectangularization-of-life-expectancy",
-    "title": "Measuring Health and Disease in Populations",
-    "section": "Rectangularization of Life Expectancy",
-    "text": "Rectangularization of Life Expectancy\n\nSurvival curves become more rectangular as mortality compresses toward older ages.\nImplications:\n\nShift to chronic diseases as leading health concerns.\nNeed for age-specific interventions."
   },
   {
     "objectID": "measuringHealthDiseases.html#aging-populations",
@@ -105,6 +105,20 @@
     "text": "Aging Populations"
   },
   {
+    "objectID": "measuringHealthDiseases.html#rectangularization-of-life-expectancy",
+    "href": "measuringHealthDiseases.html#rectangularization-of-life-expectancy",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Rectangularization of Life Expectancy",
+    "text": "Rectangularization of Life Expectancy\n\nSurvival curves become more rectangular as mortality compresses toward older ages.\nImplications:\n\nShift to chronic diseases as leading health concerns.\nNeed for age-specific interventions."
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#fertility",
+    "href": "measuringHealthDiseases.html#fertility",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Fertility",
+    "text": "Fertility\n\nSome definitions\n\ncrude birth rate (CBR): number of births per 1,000 population per year. The denominator, however, refers to the total population, including men and boys, young girls and old women!\ngeneral fertility rate (GFR): restricts inclusion in its denominator only to women in the reproductive age range\ntotal fertility rate (TFR): summing all age-specific fertility rates for women in the childbearing ages."
+  },
+  {
     "objectID": "measuringHealthDiseases.html#aging-populations-3",
     "href": "measuringHealthDiseases.html#aging-populations-3",
     "title": "Measuring Health and Disease in Populations",
@@ -112,11 +126,11 @@
     "text": "Aging Populations\n\nPolicy Implications:\n\nNeed for long-term care services.\nRedesign of healthcare systems."
   },
   {
-    "objectID": "measuringHealthDiseases.html#interactive-activity",
-    "href": "measuringHealthDiseases.html#interactive-activity",
+    "objectID": "measuringHealthDiseases.html#interactive-activity-1",
+    "href": "measuringHealthDiseases.html#interactive-activity-1",
     "title": "Measuring Health and Disease in Populations",
     "section": "Interactive Activity",
-    "text": "Interactive Activity\n\n\n\nGroup A: Kayla H., Sammie C., Chloe L., Henry S., Vedanth V.\n\nGroup B: Prashant K., Lillian L., Ashley P., Cate M., Emily T.\n\nGroup C: Shriya P., Evy W., Caithlyn C., Grace S.\n\nGroup D: Chris C., Olivia N., Aaron C., Lola S., Alicia A.\n\nGroup E: Elmira S., Sebastian S., Mina C., Hudson K., Marwa A.\n\nGroup F: Abena A., Xiomara G., Natalie W., Neves H.\n\nGroup G: Sophie P., Jessica L.,Joy L., , Vladimir V.\n\n\nAnalysis Instructions\n\nAnalyze an example population pyramid.\nPredict changes over 20 years based on fertility and mortality trends.\nfertility trend and mortality\n\n\\[\nP(t) = P_0 \\times \\left(1 + \\frac{B - D}{1000} \\right)^t\n\\] Where:\n\n\\(P(t)\\): The population at time \\(t\\), after \\(t\\) years.\n\\(P_0\\): The current population (the population at time \\(t = 0\\)).\n\\(B\\): The birth rate, expressed as the number of births per 1,000 people per year.\n\\(D\\): The death rate, expressed as the number of deaths per 1,000 people per year.\n\\(t\\): The number of years into the future you are projecting (e.g., 20 years)."
+    "text": "Interactive Activity\n\n\n\nGroup A: Kayla H., Sammie C., Chloe L., Henry S., Vedanth V.\n\nGroup B: Prashant K., Lillian L., Ashley P., Cate M., Emily T.\n\nGroup C: Shriya P., Evy W., Caithlyn C., Grace S.\n\nGroup D: Chris C., Olivia N., Aaron C., Lola S., Alicia A.\n\nGroup E: Elmira S., Sebastian S., Mina C., Hudson K., Marwa A.\n\nGroup F: Abena A., Xiomara G., Natalie W., Neves H.\n\nGroup G: Sophie P., Jessica L.,Joy L., Vladimir V.\n\n\nAnalysis Instructions\n\nAnalyze an example population pyramid.\nPredict changes over 20 years based on fertility and mortality trends.\nfertility trend and mortality\n\n\\[\nP(t) = P_0 \\times \\left(1 + \\frac{B - D}{1000} \\right)^t\n\\] Where:\n\n\\(P(t)\\): The population at time \\(t\\), after \\(t\\) years.\n\\(P_0\\): The current population (the population at time \\(t = 0\\)).\n\\(B\\): The birth rate, expressed as the number of births per 1,000 people per year.\n\\(D\\): The death rate, expressed as the number of deaths per 1,000 people per year.\n\\(t\\): The number of years into the future you are projecting (e.g., 20 years)."
   },
   {
     "objectID": "measuringHealthDiseases.html#summary",
