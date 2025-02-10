@@ -70,6 +70,20 @@
     "text": "Interactive Activity\n\n\n\nGroup A: Kayla H., Sammie C., Chloe L., Henry S., Vedanth V.\n\nGroup B: Prashant K., Lillian L., Ashley P., Cate M., Emily T.\n\nGroup C: Shriya P., Evy W., Caithlyn C., Grace S.\n\nGroup D: Chris C., Olivia N., Aaron C., Lola S., Alicia A.\n\nGroup E: Elmira S., Sebastian S., Mina C., Hudson K., Marwa A.\n\nGroup F: Abena A., Xiomara G., Natalie W., Neves H.\n\nGroup G: Sophie P., Jessica L.,Joy L., Vladimir V.\n\n\nAnalysis Instructions\n\nChoose an age pyramid.\nExplain to class what you see and what you expect the population to look like in 15, 30 and 50 years."
   },
   {
+    "objectID": "measuringHealthDiseases.html#demographic-transition",
+    "href": "measuringHealthDiseases.html#demographic-transition",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Demographic Transition",
+    "text": "Demographic Transition\n\n4 stages of transitions\nThere is actually a fifth stage"
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#demographic-transition-1",
+    "href": "measuringHealthDiseases.html#demographic-transition-1",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "Demographic Transition",
+    "text": "Demographic Transition\n\nStage 1: high burden of infectious diseases, high maternal/child mortality\nStages 2 & 3: transition to chronic diseases; improved health infrastructure\nStages 4 and 5: dominance of Non-Communicable Diseases (NCDs), and ageing related conditions"
+  },
+  {
     "objectID": "measuringHealthDiseases.html#preston-curve",
     "href": "measuringHealthDiseases.html#preston-curve",
     "title": "Measuring Health and Disease in Populations",
@@ -126,11 +140,18 @@
     "text": "Aging Populations\n\nPolicy Implications:\n\nNeed for long-term care services.\nRedesign of healthcare systems."
   },
   {
-    "objectID": "measuringHealthDiseases.html#interactive-activity-1",
-    "href": "measuringHealthDiseases.html#interactive-activity-1",
+    "objectID": "measuringHealthDiseases.html#book-exercise",
+    "href": "measuringHealthDiseases.html#book-exercise",
     "title": "Measuring Health and Disease in Populations",
-    "section": "Interactive Activity",
-    "text": "Interactive Activity\n\n\n\nGroup A: Kayla H., Sammie C., Chloe L., Henry S., Vedanth V.\n\nGroup B: Prashant K., Lillian L., Ashley P., Cate M., Emily T.\n\nGroup C: Shriya P., Evy W., Caithlyn C., Grace S.\n\nGroup D: Chris C., Olivia N., Aaron C., Lola S., Alicia A.\n\nGroup E: Elmira S., Sebastian S., Mina C., Hudson K., Marwa A.\n\nGroup F: Abena A., Xiomara G., Natalie W., Neves H.\n\nGroup G: Sophie P., Jessica L.,Joy L., Vladimir V.\n\n\nAnalysis Instructions\n\nAnalyze an example population pyramid.\nPredict changes over 20 years based on fertility and mortality trends.\nfertility trend and mortality\n\n\\[\nP(t) = P_0 \\times \\left(1 + \\frac{B - D}{1000} \\right)^t\n\\] Where:\n\n\\(P(t)\\): The population at time \\(t\\), after \\(t\\) years.\n\\(P_0\\): The current population (the population at time \\(t = 0\\)).\n\\(B\\): The birth rate, expressed as the number of births per 1,000 people per year.\n\\(D\\): The death rate, expressed as the number of deaths per 1,000 people per year.\n\\(t\\): The number of years into the future you are projecting (e.g., 20 years)."
+    "section": "Book exercise",
+    "text": "Book exercise\n\n\nExercise 2.1: State of the Population\n In the 2000 census, the total population of the United States was 281,423,000, with the following age-sex distribution (rounded to the nearest thousand):\n\n\n\nAge Group\nMale Population\nFemale Population\nTotal Population\n\n\n\n\n0–1\n1,949,000\n1,857,000\n3,806,000\n\n\n1–4\n7,862,000\n7,508,000\n15,370,000\n\n\n5–14\n21,044,000\n20,034,000\n41,078,000\n\n\n15–44\n62,647,000\n61,577,000\n124,224,000\n\n\n45–64\n30,143,000\n31,810,000\n61,953,000\n\n\n65+\n14,410,000\n20,582,000\n34,992,000\n\n\nTotal\n138,055,000\n143,368,000\n281,423,000\n\n\n\n\n\nCalculations\n\n\n\nProportion of the Elderly (65+ years) in the Population\n\n\nProportion of the Young (0–14 years) in the Population\n\n\nSex Ratio in Age Group 0–14 (expressed as 100 males per females)\n\n\nSex Ratio in Age Group 65+ (expressed as males per 100 females)"
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#at-home-exercise",
+    "href": "measuringHealthDiseases.html#at-home-exercise",
+    "title": "Measuring Health and Disease in Populations",
+    "section": "At home exercise",
+    "text": "At home exercise\n\n\nAnalyze an example population pyramid.\nPredict changes over 20 years based on fertility and mortality trends.\nfertility trend and mortality\n\n\\[\nP(t) = P_0 \\times \\left(1 + \\frac{B - D}{1000} \\right)^t\n\\]\n\n\\(P(t)\\): The population at time \\(t\\), after \\(t\\) years.\n\\(P_0\\): The current population (the population at time \\(t = 0\\)).\n\\(B\\): The birth rate, expressed as the number of births per 1,000 people per year.\n\\(D\\): The death rate, expressed as the number of deaths per 1,000 people per year.\n\\(t\\): The number of years into the future you are projecting (e.g., 20 years)."
   },
   {
     "objectID": "measuringHealthDiseases.html#summary",
@@ -144,6 +165,6 @@
     "href": "measuringHealthDiseases.html#references",
     "title": "Measuring Health and Disease in Populations",
     "section": "References",
-    "text": "References\n\nYoung, T. K. (2004). Population Health: Concepts and Methods.\nWHO Reports on Health Metrics.\nNational Center for Health Statistics."
+    "text": "References\n\nYoung, T. K. (2004). Population Health: Concepts and Methods.\nWHO Reports on Health Metrics.\nNational Center for Health Statistics.\nPreston, S. H. (1975). The changing relation between mortality and level of economic development. Population Studies, 29(2), 231-248.\nOmran, A. R. (1971). The Epidemiologic Transition: A Theory of the Epidemiology of Population Change. The Milbank Quarterly, 49(4), 509–38."
   }
 ]
