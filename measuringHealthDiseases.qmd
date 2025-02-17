@@ -1,6 +1,6 @@
 ---
-title: "Measuring Health and Disease in Populations"
-subtitle: "Eric Delmelle <br> Jan 29 - Feb 5 - Feb 10, 2024"
+title: "Measuring Health and Disease in Populations (chapter 2)"
+subtitle: "Eric Delmelle <br> Jan 29 - Feb 5 - Feb 10 - Feb 17, 2025"
 format: revealjs
 ---
 
@@ -23,6 +23,8 @@ ul ul {
 -   Importance of population health metrics.
 -   Ageing in the population
 -   Demographic transition
+-   Life table and life expectancy
+-   The importance to standardize
 
 ------------------------------------------------------------------------
 
@@ -255,13 +257,190 @@ $$ ID = \frac{3}{12} = 0.25 \text{ cases per person-year} $$
 
 ------------------------------------------------------------------------
 
-### [**Mentimer survey**]{style="color: pink;"}
+# Mortality Metrics
 
-Do you think we could get a complete rectangularization of the survival curve?
+## Crude Death Rate (CDR)
+- Number of deaths per 1,000 individuals per year.
+- Can be refined by breaking it down by age, sex, and socioeconomic status.
+- **Example:** CDR in Mexico < CDR in the USA, but age distribution must be considered.
 
-![](imgs/menti1.jpg){fig-align="center" width="267"}
+## Case Fatality Rate (CFR)
+- Proportion of individuals with a disease who die from it.
+- Indicates severity and lethality of a disease.
+- **Example Calculation:** CFR = (Disease deaths / Total diagnosed cases) × 100
 
-![](imgs/menti1b.jpg){fig-align="center" width="212"}
+------------------------------------------------------------------------
+
+## Standardized Mortality Ratio (SMR)
+- Adjusts mortality rates for different population age structures.
+- **Formula:** SMR = (Observed Deaths / Expected Deaths) × 100
+- **Example Calculation:**
+  - Observed deaths: 93
+  - Expected deaths: 70.5
+  - SMR = (93 / 70.5) × 100 = **132** (indicating 32% higher mortality than expected)
+
+------------------------------------------------------------------------
+
+# Life Table Construction
+
+## Steps in Constructing a Life Table (1)
+
+:::::: {.columns}
+::: {.column width="45%" style="font-size: 22px; line-height: 1.2;"}
+
+#### Define Age Groups{style="color: blue;"}
+- 0-20, 21-40, 41-60, 61+
+<br><br><br>
+
+#### Initialize Population (l₀){style="color: blue;"}
+- Assume l₀ = 100,000
+<br><br><br>
+
+#### Define Mortality Rates (qₓ){style="color: blue;"}
+- 0-20: qₓ = 0.005
+- 21-40: qₓ = 0.01
+- 41-60: qₓ = 0.15
+- 61+: qₓ = 0.50
+
+:::
+::: {.column width="45%" style="font-size: 22px; line-height: 1.2;"}
+
+#### Calculate Deaths (dₓ){style="color: blue;"}
+
+$$ dₓ = lₓ \times qₓ $$
+- **Example:** $$ d_{0-20} = 100,000 \times 0.005 = 500 $$
+
+#### Calculate Survivors (lₓ){style="color: blue;"}
+
+-   $lₓ$ for next group = previous $lₓ - dₓ$
+-   **Example:** $$ l_{21-40} = 100,000 - 500 = 99,500 $$
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Steps in Constructing a Life Table (2)
+
+:::::: {.columns}
+::: {.column width="45%" style="font-size: 22px; line-height: 1.2;"}
+
+
+#### Calculate Person-Years Lived (Lₓ){style="color: blue;"}
+- $Lₓ = \frac{lₓ + l_{x+1}}{2} \times n$
+- Example: $L_{0-20} = \frac{100,000 + 99,500}{2} \times 20 = 1995000$
+   
+   
+#### Calculate Total Years Remaining (Tₓ){style="color: blue;"}
+- $Tₓ$= Sum of all subsequent $Lₓ$ values.
+
+#### Derive Life Expectancy (eₓ){style="color: blue;"}
+- $eₓ = \frac{Tₓ}{lₓ}$
+- Represents average remaining years of life for individuals entering each age group.
+:::
+::: {.column width="45%" style="font-size: 22px; line-height: 1.2;"}
+
+```{r}
+library(knitr)
+life_table <- data.frame(
+  Age_Group = c("0-20", "21-40", "41-60", "61+"),
+  Initial_Population = c(100000, 99500, 98550, 83767),
+  Mortality_Rate = c(0.005, 0.01, 0.15, 0.50),
+  Deaths = c(500, 995, 14783, 41883),
+  Survivors = c(99500, 98550, 83767, 41884),
+  Person_Years = c(1995000, 1980500, 1823170, 1256510),
+  Total_Years_Remaining = c(7055180, 5060180, 3079680, 1256510),
+  Life_Expectancy = c(70.55, 50.85, 31.25, 15.00)
+)
+kable(life_table)
+```
+
+
+:::
+::::::
+
+
+------------------------------------------------------------------------
+
+# Years of Life Lost 
+- Years of Life Lost (YLL) quantifies the impact of premature mortality in a population.
+- Used in public health to evaluate disease burden and prioritize interventions.
+
+------------------------------------------------------------------------
+
+## Methodology for Calculating YLL{style="color: teal;"}
+
+#### Definition of Premature Mortality Age{style="color: blue;"}
+- Premature mortality is defined relative to a threshold age, typically the average life expectancy.
+- For this example, we use **75 years**.
+
+#### Identification of Age at Death{style="color: blue;"}
+- Essential for determining premature deaths.
+- Each death’s impact varies depending on age at death.
+
+------------------------------------------------------------------------
+
+#### Calculation of Individual YLL{style="color: blue;"}
+- Formula:
+  $\text{YLL} = T - a_i$
+  where:
+  - $T$ is the threshold age,
+  - $a_i$ is the individual's age at death.
+
+#### Summation of YLL{style="color: blue;"}
+- Total population impact calculated as:
+  $\text{Total YLL} = \sum \text{YLL}_i$
+
+------------------------------------------------------------------------
+
+### Example Calculation{style="color: pink;"}
+
+Consider three individuals dying at **ages 25, 35, and 60**, with a threshold of **75 years**:
+
+:::::: {.columns}
+::: {.column width="45%"}
+- **Individual 1:**
+  - Age at death: 25
+  - YLL = 75 - 25 = **50 years**
+- **Individual 2:**
+  - Age at death: 35
+  - YLL = 75 - 35 = **40 years**
+:::
+
+::: {.column width="45%"}
+- **Individual 3:**
+  - Age at death: 60
+  - YLL = 75 - 60 = **15 years**
+
+- **Total YLL:**
+  $50 + 40 + 15 = 105 \text{ years}$
+  
+:::
+::::::
+
+------------------------------------------------------------------------
+
+### Discussion{style="color: teal;"}
+
+- The **105 years of YLL** highlight the burden of premature deaths.
+- Helps health authorities prioritize interventions.
+- Modifications include:
+  - Discounting future years,
+  - Weighting younger deaths more heavily,
+  - Adjusting for epidemiological and demographic context.
+- *Let's look at Box 2.5 in the book*.
+
+
+
+------------------------------------------------------------------------
+
+### Summary{style="color: teal;"}
+
+- Crude Death Rate (CDR) and Case Fatality Rate (CFR) provide baseline mortality measures.
+- Standardized Mortality Ratio (SMR) adjusts for age distribution differences.
+- Life tables are constructed step-by-step to estimate life expectancy at various ages.
+- **Years of Life Lost (YLL)** quantifies premature mortality and is crucial for measuring disease burden.
+- YLL helps prioritize public health interventions by identifying the most significant sources of early death.
+
 
 ------------------------------------------------------------------------
 

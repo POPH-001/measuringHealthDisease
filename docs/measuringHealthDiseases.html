@@ -10,7 +10,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.450">
 
-  <title>Intro to Pop Health - Measuring Health and Disease in Populations</title>
+  <title>Intro to Pop Health - Measuring Health and Disease in Populations (chapter 2)</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,6 +28,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -324,8 +389,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Measuring Health and Disease in Populations</h1>
-  <p class="subtitle">Eric Delmelle <br> Jan 29 - Feb 5 - Feb 10, 2024</p>
+  <h1 class="title">Measuring Health and Disease in Populations (chapter 2)</h1>
+  <p class="subtitle">Eric Delmelle <br> Jan 29 - Feb 5 - Feb 10 - Feb 17, 2025</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -351,6 +416,8 @@ ul ul {
 <li>Importance of population health metrics.</li>
 <li>Ageing in the population</li>
 <li>Demographic transition</li>
+<li>Life table and life expectancy</li>
+<li>The importance to standardize</li>
 </ul>
 </section>
 <section id="incidence-and-prevalence" class="slide level2">
@@ -595,18 +662,277 @@ ul ul {
 </section>
 <section class="slide level2">
 
-<h3 id="mentimer-survey"><span style="color: pink;"><strong>Mentimer survey</strong></span></h3>
-<p>Do you think we could get a complete rectangularization of the survival curve?</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="imgs/menti1.jpg" width="267"></p>
-</figure>
+</section>
+<section>
+<section id="mortality-metrics" class="title-slide slide level1 center">
+<h1>Mortality Metrics</h1>
+
+</section>
+<section id="crude-death-rate-cdr" class="slide level2">
+<h2>Crude Death Rate (CDR)</h2>
+<ul>
+<li>Number of deaths per 1,000 individuals per year.</li>
+<li>Can be refined by breaking it down by age, sex, and socioeconomic status.</li>
+<li><strong>Example:</strong> CDR in Mexico &lt; CDR in the USA, but age distribution must be considered.</li>
+</ul>
+</section>
+<section id="case-fatality-rate-cfr" class="slide level2">
+<h2>Case Fatality Rate (CFR)</h2>
+<ul>
+<li>Proportion of individuals with a disease who die from it.</li>
+<li>Indicates severity and lethality of a disease.</li>
+<li><strong>Example Calculation:</strong> CFR = (Disease deaths / Total diagnosed cases) × 100</li>
+</ul>
+</section>
+<section id="standardized-mortality-ratio-smr" class="slide level2">
+<h2>Standardized Mortality Ratio (SMR)</h2>
+<ul>
+<li>Adjusts mortality rates for different population age structures.</li>
+<li><strong>Formula:</strong> SMR = (Observed Deaths / Expected Deaths) × 100</li>
+<li><strong>Example Calculation:</strong>
+<ul>
+<li>Observed deaths: 93</li>
+<li>Expected deaths: 70.5</li>
+<li>SMR = (93 / 70.5) × 100 = <strong>132</strong> (indicating 32% higher mortality than expected)</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="life-table-construction" class="title-slide slide level1 center">
+<h1>Life Table Construction</h1>
+
+</section>
+<section id="steps-in-constructing-a-life-table-1" class="slide level2">
+<h2>Steps in Constructing a Life Table (1)</h2>
+<div class="columns">
+<div class="column" style="font-size: 22px; line-height: 1.2;">
+<h4 style="color: blue;" id="define-age-groups">Define Age Groups</h4>
+<ul>
+<li>0-20, 21-40, 41-60, 61+ <br><br><br></li>
+</ul>
+<h4 style="color: blue;" id="initialize-population-l₀">Initialize Population (l₀)</h4>
+<ul>
+<li>Assume l₀ = 100,000 <br><br><br></li>
+</ul>
+<h4 style="color: blue;" id="define-mortality-rates-qₓ">Define Mortality Rates (qₓ)</h4>
+<ul>
+<li>0-20: qₓ = 0.005</li>
+<li>21-40: qₓ = 0.01</li>
+<li>41-60: qₓ = 0.15</li>
+<li>61+: qₓ = 0.50</li>
+</ul>
+</div><div class="column" style="font-size: 22px; line-height: 1.2;">
+<h4 style="color: blue;" id="calculate-deaths-dₓ">Calculate Deaths (dₓ)</h4>
+<p><span class="math display">\[ dₓ = lₓ \times qₓ \]</span> - <strong>Example:</strong> <span class="math display">\[ d_{0-20} = 100,000 \times 0.005 = 500 \]</span></p>
+<h4 style="color: blue;" id="calculate-survivors-lₓ">Calculate Survivors (lₓ)</h4>
+<ul>
+<li><span class="math inline">\(lₓ\)</span> for next group = previous <span class="math inline">\(lₓ - dₓ\)</span></li>
+<li><strong>Example:</strong> <span class="math display">\[ l_{21-40} = 100,000 - 500 = 99,500 \]</span></li>
+</ul>
 </div>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="imgs/menti1b.jpg" width="212"></p>
-</figure>
 </div>
+</section>
+<section id="steps-in-constructing-a-life-table-2" class="slide level2">
+<h2>Steps in Constructing a Life Table (2)</h2>
+<div class="columns">
+<div class="column" style="font-size: 22px; line-height: 1.2;">
+<h4 style="color: blue;" id="calculate-person-years-lived-lₓ">Calculate Person-Years Lived (Lₓ)</h4>
+<ul>
+<li><span class="math inline">\(Lₓ = \frac{lₓ + l_{x+1}}{2} \times n\)</span></li>
+<li>Example: <span class="math inline">\(L_{0-20} = \frac{100,000 + 99,500}{2} \times 20 = 1995000\)</span></li>
+</ul>
+<h4 style="color: blue;" id="calculate-total-years-remaining-tₓ">Calculate Total Years Remaining (Tₓ)</h4>
+<ul>
+<li><span class="math inline">\(Tₓ\)</span>= Sum of all subsequent <span class="math inline">\(Lₓ\)</span> values.</li>
+</ul>
+<h4 style="color: blue;" id="derive-life-expectancy-eₓ">Derive Life Expectancy (eₓ)</h4>
+<ul>
+<li><span class="math inline">\(eₓ = \frac{Tₓ}{lₓ}\)</span></li>
+<li>Represents average remaining years of life for individuals entering each age group.</li>
+</ul>
+</div><div class="column" style="font-size: 22px; line-height: 1.2;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(knitr)</span>
+<span id="cb1-2"><a href="#cb1-2"></a>life_table <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb1-3"><a href="#cb1-3"></a>  <span class="at">Age_Group =</span> <span class="fu">c</span>(<span class="st">"0-20"</span>, <span class="st">"21-40"</span>, <span class="st">"41-60"</span>, <span class="st">"61+"</span>),</span>
+<span id="cb1-4"><a href="#cb1-4"></a>  <span class="at">Initial_Population =</span> <span class="fu">c</span>(<span class="dv">100000</span>, <span class="dv">99500</span>, <span class="dv">98550</span>, <span class="dv">83767</span>),</span>
+<span id="cb1-5"><a href="#cb1-5"></a>  <span class="at">Mortality_Rate =</span> <span class="fu">c</span>(<span class="fl">0.005</span>, <span class="fl">0.01</span>, <span class="fl">0.15</span>, <span class="fl">0.50</span>),</span>
+<span id="cb1-6"><a href="#cb1-6"></a>  <span class="at">Deaths =</span> <span class="fu">c</span>(<span class="dv">500</span>, <span class="dv">995</span>, <span class="dv">14783</span>, <span class="dv">41883</span>),</span>
+<span id="cb1-7"><a href="#cb1-7"></a>  <span class="at">Survivors =</span> <span class="fu">c</span>(<span class="dv">99500</span>, <span class="dv">98550</span>, <span class="dv">83767</span>, <span class="dv">41884</span>),</span>
+<span id="cb1-8"><a href="#cb1-8"></a>  <span class="at">Person_Years =</span> <span class="fu">c</span>(<span class="dv">1995000</span>, <span class="dv">1980500</span>, <span class="dv">1823170</span>, <span class="dv">1256510</span>),</span>
+<span id="cb1-9"><a href="#cb1-9"></a>  <span class="at">Total_Years_Remaining =</span> <span class="fu">c</span>(<span class="dv">7055180</span>, <span class="dv">5060180</span>, <span class="dv">3079680</span>, <span class="dv">1256510</span>),</span>
+<span id="cb1-10"><a href="#cb1-10"></a>  <span class="at">Life_Expectancy =</span> <span class="fu">c</span>(<span class="fl">70.55</span>, <span class="fl">50.85</span>, <span class="fl">31.25</span>, <span class="fl">15.00</span>)</span>
+<span id="cb1-11"><a href="#cb1-11"></a>)</span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="fu">kable</span>(life_table)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table>
+<colgroup>
+<col style="width: 8%">
+<col style="width: 16%">
+<col style="width: 13%">
+<col style="width: 6%">
+<col style="width: 8%">
+<col style="width: 11%">
+<col style="width: 19%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Age_Group</th>
+<th style="text-align: right;">Initial_Population</th>
+<th style="text-align: right;">Mortality_Rate</th>
+<th style="text-align: right;">Deaths</th>
+<th style="text-align: right;">Survivors</th>
+<th style="text-align: right;">Person_Years</th>
+<th style="text-align: right;">Total_Years_Remaining</th>
+<th style="text-align: right;">Life_Expectancy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">0-20</td>
+<td style="text-align: right;">100000</td>
+<td style="text-align: right;">0.005</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">99500</td>
+<td style="text-align: right;">1995000</td>
+<td style="text-align: right;">7055180</td>
+<td style="text-align: right;">70.55</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">21-40</td>
+<td style="text-align: right;">99500</td>
+<td style="text-align: right;">0.010</td>
+<td style="text-align: right;">995</td>
+<td style="text-align: right;">98550</td>
+<td style="text-align: right;">1980500</td>
+<td style="text-align: right;">5060180</td>
+<td style="text-align: right;">50.85</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">41-60</td>
+<td style="text-align: right;">98550</td>
+<td style="text-align: right;">0.150</td>
+<td style="text-align: right;">14783</td>
+<td style="text-align: right;">83767</td>
+<td style="text-align: right;">1823170</td>
+<td style="text-align: right;">3079680</td>
+<td style="text-align: right;">31.25</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">61+</td>
+<td style="text-align: right;">83767</td>
+<td style="text-align: right;">0.500</td>
+<td style="text-align: right;">41883</td>
+<td style="text-align: right;">41884</td>
+<td style="text-align: right;">1256510</td>
+<td style="text-align: right;">1256510</td>
+<td style="text-align: right;">15.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="years-of-life-lost" class="title-slide slide level1 center">
+<h1>Years of Life Lost</h1>
+<ul>
+<li>Years of Life Lost (YLL) quantifies the impact of premature mortality in a population.</li>
+<li>Used in public health to evaluate disease burden and prioritize interventions.</li>
+</ul>
+</section>
+<section id="methodology-for-calculating-yll" class="slide level2" style="color: teal;">
+<h2>Methodology for Calculating YLL</h2>
+<h4 style="color: blue;" id="definition-of-premature-mortality-age">Definition of Premature Mortality Age</h4>
+<ul>
+<li>Premature mortality is defined relative to a threshold age, typically the average life expectancy.</li>
+<li>For this example, we use <strong>75 years</strong>.</li>
+</ul>
+<h4 style="color: blue;" id="identification-of-age-at-death">Identification of Age at Death</h4>
+<ul>
+<li>Essential for determining premature deaths.</li>
+<li>Each death’s impact varies depending on age at death.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h4 style="color: blue;" id="calculation-of-individual-yll">Calculation of Individual YLL</h4>
+<ul>
+<li>Formula: <span class="math inline">\(\text{YLL} = T - a_i\)</span> where:
+<ul>
+<li><span class="math inline">\(T\)</span> is the threshold age,</li>
+<li><span class="math inline">\(a_i\)</span> is the individual’s age at death.</li>
+</ul></li>
+</ul>
+<h4 style="color: blue;" id="summation-of-yll">Summation of YLL</h4>
+<ul>
+<li>Total population impact calculated as: <span class="math inline">\(\text{Total YLL} = \sum \text{YLL}_i\)</span></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 style="color: pink;" id="example-calculation">Example Calculation</h3>
+<p>Consider three individuals dying at <strong>ages 25, 35, and 60</strong>, with a threshold of <strong>75 years</strong>:</p>
+<div class="columns">
+<div class="column" style="width:45%;">
+<ul>
+<li><strong>Individual 1:</strong>
+<ul>
+<li>Age at death: 25</li>
+<li>YLL = 75 - 25 = <strong>50 years</strong></li>
+</ul></li>
+<li><strong>Individual 2:</strong>
+<ul>
+<li>Age at death: 35</li>
+<li>YLL = 75 - 35 = <strong>40 years</strong></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:45%;">
+<ul>
+<li><strong>Individual 3:</strong>
+<ul>
+<li>Age at death: 60</li>
+<li>YLL = 75 - 60 = <strong>15 years</strong></li>
+</ul></li>
+<li><strong>Total YLL:</strong> <span class="math inline">\(50 + 40 + 15 = 105 \text{ years}\)</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 style="color: teal;" id="discussion">Discussion</h3>
+<ul>
+<li>The <strong>105 years of YLL</strong> highlight the burden of premature deaths.</li>
+<li>Helps health authorities prioritize interventions.</li>
+<li>Modifications include:
+<ul>
+<li>Discounting future years,</li>
+<li>Weighting younger deaths more heavily,</li>
+<li>Adjusting for epidemiological and demographic context.</li>
+</ul></li>
+<li><em>Let’s look at Box 2.5 in the book</em>.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 style="color: teal;" id="summary">Summary</h3>
+<ul>
+<li>Crude Death Rate (CDR) and Case Fatality Rate (CFR) provide baseline mortality measures.</li>
+<li>Standardized Mortality Ratio (SMR) adjusts for age distribution differences.</li>
+<li>Life tables are constructed step-by-step to estimate life expectancy at various ages.</li>
+<li><strong>Years of Life Lost (YLL)</strong> quantifies premature mortality and is crucial for measuring disease burden.</li>
+<li>YLL helps prioritize public health interventions by identifying the most significant sources of early death.</li>
+</ul>
 </section>
 <section id="fertility" class="slide level2">
 <h2><span style="color: teal;"><strong>Fertility</strong></span></h2>
@@ -758,7 +1084,7 @@ P(t) = P_0 \times \left(1 + \frac{B - D}{1000} \right)^t
 </ul>
 </small><p><small></small></p>
 </section>
-<section id="summary" class="slide level2">
+<section id="summary-1" class="slide level2">
 <h2><span style="color: teal;"><strong>Summary</strong></span></h2>
 <h3 id="key-takeaways"><span style="color: pink;"><strong>Key Takeaways</strong></span></h3>
 <ul>
@@ -785,7 +1111,7 @@ P(t) = P_0 \times \left(1 + \frac{B - D}{1000} \right)^t
 <div class="footer footer-default">
 
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -997,6 +1323,44 @@ P(t) = P_0 \times \left(1 + \frac{B - D}{1000} \right)^t
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
