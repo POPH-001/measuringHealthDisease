@@ -390,7 +390,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Measuring Health and Disease in Populations (chapter 2)</h1>
-  <p class="subtitle">Eric Delmelle <br> Jan 29 - Feb 5 - Feb 10 - Feb 17, 2025</p>
+  <p class="subtitle">Eric Delmelle <br> September 11, 16 (and maybe September 18)</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -542,12 +542,6 @@ ul ul {
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="imgs/qatarPyramid.jpg" style="width:100.0%"></p>
-</figure>
-</div>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="imgs/qatarQR.jpg" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -1107,6 +1101,191 @@ P(t) = P_0 \times \left(1 + \frac{B - D}{1000} \right)^t
 <li>Preston, S. H. (1975). <em>The changing relation between mortality and level of economic development.</em> Population Studies, 29(2), 231-248.</li>
 <li>Omran, A. R. (1971). <em>The Epidemiologic Transition: A Theory of the Epidemiology of Population Change.</em> The Milbank Quarterly, 49(4), 509–38.</li>
 </ol>
+<table>
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"># ADDITIONAL SLIDES</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">### <span style="color: pink;"><strong>Deriving Total Fertility Rate</strong></span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">::: columns ::: {.column width=“40%”} #### Age-Specific Fertility Rates (ASFRs) for the U.S. (2000)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><small> - <strong>15–19</strong>: 48.5/1,000<br>
+- <strong>20–24</strong>: 112.3/1,000<br>
+- <strong>25–29</strong>: 121.4/1,000<br>
+- <strong>30–34</strong>: 94.1/1,000<br>
+- <strong>35–39</strong>: 40.4/1,000<br>
+- <strong>40–44</strong>: 7.9/1,000<br>
+- <strong>45–49</strong>: 0.5/1,000</small></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Total:</strong> 425/1,000<br>
+ :::</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">::: {.column width=“60%”} #### Explanation</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span style="font-size: 70%">- The ASFR represents the birth rate per 1,000 women in each age group.<br>
+- Summing the ASFRs gives <strong>425/1,000</strong> for all age groups. - <br>Since each ASFR represents a <strong>five-year</strong> average, multiplying by 5 gives <strong>2,125/1,000</strong>. This means the <strong>TFR = 2.1 births per woman</strong>, the replacement-level fertility rate typical of developed countries. Including <strong>ages 10–14 or 50–54</strong> has little impact on the overall TFR.</span> ::: :::</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="comparing-mortality-rates" class="slide level2">
+<h2><span style="color: teal;"><strong>Comparing Mortality Rates</strong></span></h2>
+<ul>
+<li><p>We want to compare the mortality rates of <strong>City A</strong> and <strong>City B</strong>, adjusting for differences in their age distributions.</p></li>
+<li><p>City A has a <strong>younger population</strong>, while City B has a <strong>larger proportion of older individuals</strong>. To fairly compare mortality rates, we standardize them to a common reference population.</p></li>
+<li><p>A <strong>standard population</strong> is a <strong>reference population</strong>, often derived from a national or international dataset. It serves as a benchmark to eliminate differences in age distribution when comparing mortality rates across different regions.</p></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="direct-standardization-example"><span style="color: pink;"><strong>Direct Standardization Example</strong></span></h3>
+<ul>
+<li><strong>Step 1: Data Collection</strong>: We choose a <strong>Standard Population</strong> and apply each city’s age-specific mortality rates.</li>
+<li>Remember that city A is “younger”.</li>
+</ul>
+<p><small></small></p><small>
+<table style="width:97%;">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 11%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Age Group</th>
+<th>Standard Population</th>
+<th>% Population (City A)</th>
+<th>% Population (City B)</th>
+<th>Mortality Rate (City A)</th>
+<th>Expected Deaths (City A)</th>
+<th>Mortality Rate (City B)</th>
+<th>Expected Deaths (City B)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Young</td>
+<td>10,000</td>
+<td>70%</td>
+<td>40%</td>
+<td>2 per 1,000</td>
+<td><strong>20</strong></td>
+<td>4 per 1,000</td>
+<td><strong>40</strong></td>
+</tr>
+<tr class="even">
+<td>Old</td>
+<td>5,000</td>
+<td>30%</td>
+<td>60%</td>
+<td>10 per 1,000</td>
+<td><strong>50</strong></td>
+<td>12 per 1,000</td>
+<td><strong>60</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td><strong>15,000</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>70 deaths</strong></td>
+<td></td>
+<td><strong>100 deaths</strong></td>
+</tr>
+</tbody>
+</table>
+</small><p><small></small></p>
+</section>
+<section class="slide level2">
+
+<h3 id="direct-standardization-example-1"><span style="color: pink;"><strong>Direct Standardization Example</strong></span></h3>
+<ul>
+<li><strong>Step 2: Compute Standardized Rates</strong></li>
+</ul>
+<p>Standardized Rate for City A <span class="math display">\[
+\tiny \frac{70}{15,000} \times 1,000 = 4.67 \text{ deaths per 1,000}
+\]</span> Standardized Rate for City B <span class="math display">\[
+\tiny\frac{100}{15,000} \times 1,000 = 6.67 \text{ deaths per 1,000}
+\]</span></p>
+<p><strong>Conclusion:</strong> Even after adjusting for age differences, City B has a higher mortality rate.</p>
+</section>
+<section id="indirect-standardization-example-smr-calculation" class="slide level2">
+<h2><strong>Indirect Standardization Example (SMR Calculation)</strong></h2>
+<ul>
+<li><strong>Step 1: Data Collection</strong></li>
+</ul>
+<p><small></small></p><small>
+<table style="width:98%;">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 20%">
+<col style="width: 36%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Age Group</th>
+<th>Population (Town X)</th>
+<th>National Mortality Rate (per 1,000)</th>
+<th>Expected Deaths in Town X</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Young</td>
+<td>500</td>
+<td>3</td>
+<td><strong>1.5</strong></td>
+</tr>
+<tr class="even">
+<td>Old</td>
+<td>200</td>
+<td>12</td>
+<td><strong>2.4</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td><strong>700</strong></td>
+<td></td>
+<td><strong>3.9 expected deaths</strong></td>
+</tr>
+</tbody>
+</table>
+</small><p><small></small></p>
+<ul>
+<li>Town X observed <strong>6 deaths</strong> in reality.</li>
+</ul>
+</section>
+<section id="step-2-compute-smr" class="slide level2">
+<h2><strong>Step 2: Compute SMR</strong></h2>
+<p><span class="math display">\[
+SMR = \frac{\text{Observed Deaths}}{\text{Expected Deaths}} = \frac{6}{3.9} = 1.54
+\]</span></p>
+<p><strong>Conclusion:</strong> Since <strong>SMR = 1.54</strong>, Town X has <strong>54% more deaths</strong> than expected based on national mortality rates.</p>
+</section>
+<section id="final-takeaways" class="slide level2">
+<h2><strong>Final Takeaways</strong></h2>
+<ul>
+<li><strong>Direct Standardization</strong>: Compares two places assuming they had the <strong>same age distribution</strong>.</li>
+<li><strong>Indirect Standardization (SMR)</strong>: Compares a small place <strong>to a larger standard population</strong> when local mortality rates aren’t available.</li>
+</ul>
+<p>Questions? 🚀</p>
 
 <div class="footer footer-default">
 

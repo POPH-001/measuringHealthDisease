@@ -207,6 +207,34 @@
     "href": "measuringHealthDiseases.html#references",
     "title": "Measuring Health and Disease in Populations (chapter 2)",
     "section": "References",
-    "text": "References\n\nYoung, T. K. (2004). Population Health: Concepts and Methods.\nWHO Reports on Health Metrics.\nNational Center for Health Statistics.\nPreston, S. H. (1975). The changing relation between mortality and level of economic development. Population Studies, 29(2), 231-248.\nOmran, A. R. (1971). The Epidemiologic Transition: A Theory of the Epidemiology of Population Change. The Milbank Quarterly, 49(4), 509–38."
+    "text": "References\n\nYoung, T. K. (2004). Population Health: Concepts and Methods.\nWHO Reports on Health Metrics.\nNational Center for Health Statistics.\nPreston, S. H. (1975). The changing relation between mortality and level of economic development. Population Studies, 29(2), 231-248.\nOmran, A. R. (1971). The Epidemiologic Transition: A Theory of the Epidemiology of Population Change. The Milbank Quarterly, 49(4), 509–38.\n\n\n\n\n\n\n\n# ADDITIONAL SLIDES\n\n\n### Deriving Total Fertility Rate\n\n\n::: columns ::: {.column width=“40%”} #### Age-Specific Fertility Rates (ASFRs) for the U.S. (2000)\n\n\n - 15–19: 48.5/1,000\n- 20–24: 112.3/1,000\n- 25–29: 121.4/1,000\n- 30–34: 94.1/1,000\n- 35–39: 40.4/1,000\n- 40–44: 7.9/1,000\n- 45–49: 0.5/1,000\n\n\nTotal: 425/1,000\n :::\n\n\n::: {.column width=“60%”} #### Explanation\n\n\n- The ASFR represents the birth rate per 1,000 women in each age group.\n- Summing the ASFRs gives 425/1,000 for all age groups. - Since each ASFR represents a five-year average, multiplying by 5 gives 2,125/1,000. This means the TFR = 2.1 births per woman, the replacement-level fertility rate typical of developed countries. Including ages 10–14 or 50–54 has little impact on the overall TFR. ::: :::"
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#comparing-mortality-rates",
+    "href": "measuringHealthDiseases.html#comparing-mortality-rates",
+    "title": "Measuring Health and Disease in Populations (chapter 2)",
+    "section": "Comparing Mortality Rates",
+    "text": "Comparing Mortality Rates\n\nWe want to compare the mortality rates of City A and City B, adjusting for differences in their age distributions.\nCity A has a younger population, while City B has a larger proportion of older individuals. To fairly compare mortality rates, we standardize them to a common reference population.\nA standard population is a reference population, often derived from a national or international dataset. It serves as a benchmark to eliminate differences in age distribution when comparing mortality rates across different regions."
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#indirect-standardization-example-smr-calculation",
+    "href": "measuringHealthDiseases.html#indirect-standardization-example-smr-calculation",
+    "title": "Measuring Health and Disease in Populations (chapter 2)",
+    "section": "Indirect Standardization Example (SMR Calculation)",
+    "text": "Indirect Standardization Example (SMR Calculation)\n\nStep 1: Data Collection\n\n\n\n\n\n\n\n\n\n\n\nAge Group\nPopulation (Town X)\nNational Mortality Rate (per 1,000)\nExpected Deaths in Town X\n\n\n\n\nYoung\n500\n3\n1.5\n\n\nOld\n200\n12\n2.4\n\n\nTotal\n700\n\n3.9 expected deaths\n\n\n\n\n\nTown X observed 6 deaths in reality."
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#step-2-compute-smr",
+    "href": "measuringHealthDiseases.html#step-2-compute-smr",
+    "title": "Measuring Health and Disease in Populations (chapter 2)",
+    "section": "Step 2: Compute SMR",
+    "text": "Step 2: Compute SMR\n\\[\nSMR = \\frac{\\text{Observed Deaths}}{\\text{Expected Deaths}} = \\frac{6}{3.9} = 1.54\n\\]\nConclusion: Since SMR = 1.54, Town X has 54% more deaths than expected based on national mortality rates."
+  },
+  {
+    "objectID": "measuringHealthDiseases.html#final-takeaways",
+    "href": "measuringHealthDiseases.html#final-takeaways",
+    "title": "Measuring Health and Disease in Populations (chapter 2)",
+    "section": "Final Takeaways",
+    "text": "Final Takeaways\n\nDirect Standardization: Compares two places assuming they had the same age distribution.\nIndirect Standardization (SMR): Compares a small place to a larger standard population when local mortality rates aren’t available.\n\nQuestions? 🚀"
   }
 ]
