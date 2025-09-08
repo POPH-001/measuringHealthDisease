@@ -1,6 +1,6 @@
 ---
 title: "Measuring Health and Disease in Populations (chapter 2)"
-subtitle: "Eric Delmelle <br> Jan 29 - Feb 5 - Feb 10 - Feb 17, 2025"
+subtitle: "Eric Delmelle <br> September 11, 16 (and maybe September 18)"
 format: revealjs
 ---
 
@@ -141,9 +141,7 @@ $$ ID = \frac{3}{12} = 0.25 \text{ cases per person-year} $$
 ![](imgs/qatarPyramid.jpg){fig-align="center" width="100%"}
 :::
 
-::: {.column width="40%"}
-![](imgs/qatarQR.jpg){fig-align="center" width="100%"}
-:::
+
 :::
 
 ------------------------------------------------------------------------
@@ -151,14 +149,13 @@ $$ ID = \frac{3}{12} = 0.25 \text{ cases per person-year} $$
 ## [**Interactive Activity**]{style="color: teal;"}
 
 ::: columns
-::: {.column width="45%" style="font-size: 18px; line-height: 1.2;"}
--   **Group A**: Kayla H., Sammie C., Chloe L., Henry S., Vedanth V.\
--   **Group B**: Prashant K., Lillian L., Ashley P., Cate M., Emily T.\
--   **Group C**: Shriya P., Evy W., Caithlyn C., Grace S.\
--   **Group D**: Chris C., Olivia N., Aaron C., Lola S., Alicia A.\
--   **Group E**: Elmira S., Sebastian S., Mina C., Hudson K., Marwa A.\
--   **Group F**: Abena A., Xiomara G., Natalie W., Neves H.\
--   **Group G**: Sophie P., Jessica L.,Joy L., Vladimir V.
+::: {.column width="45%" style="font-size: 30px; line-height: 1.2;"}
+- Group **John Snow**
+- Group **Pasteur** 
+- Group **Nightingale** 
+- Group **Gupta**
+- Group **Fauci** 
+- Group **Wakefield**
 :::
 
 ::: {.column width="55%" style="font-size: 30px; line-height: 1.4;"}
@@ -260,24 +257,27 @@ $$ ID = \frac{3}{12} = 0.25 \text{ cases per person-year} $$
 # Mortality Metrics
 
 ## Crude Death Rate (CDR)
-- Number of deaths per 1,000 individuals per year.
-- Can be refined by breaking it down by age, sex, and socioeconomic status.
-- **Example:** CDR in Mexico < CDR in the USA, but age distribution must be considered.
+
+-   Number of deaths per 1,000 individuals per year.
+-   Can be refined by breaking it down by age, sex, and socioeconomic status.
+-   **Example:** CDR in Mexico \< CDR in the USA, but age distribution must be considered.
 
 ## Case Fatality Rate (CFR)
-- Proportion of individuals with a disease who die from it.
-- Indicates severity and lethality of a disease.
-- **Example Calculation:** CFR = (Disease deaths / Total diagnosed cases) × 100
+
+-   Proportion of individuals with a disease who die from it.
+-   Indicates severity and lethality of a disease.
+-   **Example Calculation:** CFR = (Disease deaths / Total diagnosed cases) × 100
 
 ------------------------------------------------------------------------
 
 ## Standardized Mortality Ratio (SMR)
-- Adjusts mortality rates for different population age structures.
-- **Formula:** SMR = (Observed Deaths / Expected Deaths) × 100
-- **Example Calculation:**
-  - Observed deaths: 93
-  - Expected deaths: 70.5
-  - SMR = (93 / 70.5) × 100 = **132** (indicating 32% higher mortality than expected)
+
+-   Adjusts mortality rates for different population age structures.
+-   **Formula:** SMR = (Observed Deaths / Expected Deaths) × 100
+-   **Example Calculation:**
+    -   Observed deaths: 93
+    -   Expected deaths: 70.5
+    -   SMR = (93 / 70.5) × 100 = **132** (indicating 32% higher mortality than expected)
 
 ------------------------------------------------------------------------
 
@@ -285,60 +285,58 @@ $$ ID = \frac{3}{12} = 0.25 \text{ cases per person-year} $$
 
 ## Steps in Constructing a Life Table (1)
 
-:::::: {.columns}
+::: columns
 ::: {.column width="45%" style="font-size: 22px; line-height: 1.2;"}
+#### Define Age Groups {style="color: blue;"}
 
-#### Define Age Groups{style="color: blue;"}
-- 0-20, 21-40, 41-60, 61+
-<br><br><br>
+-   0-20, 21-40, 41-60, 61+ <br><br><br>
 
-#### Initialize Population (l₀){style="color: blue;"}
-- Assume l₀ = 100,000
-<br><br><br>
+#### Initialize Population (l₀) {style="color: blue;"}
 
-#### Define Mortality Rates (qₓ){style="color: blue;"}
-- 0-20: qₓ = 0.005
-- 21-40: qₓ = 0.01
-- 41-60: qₓ = 0.15
-- 61+: qₓ = 0.50
+-   Assume l₀ = 100,000 <br><br><br>
 
+#### Define Mortality Rates (qₓ) {style="color: blue;"}
+
+-   0-20: qₓ = 0.005
+-   21-40: qₓ = 0.01
+-   41-60: qₓ = 0.15
+-   61+: qₓ = 0.50
 :::
+
 ::: {.column width="45%" style="font-size: 22px; line-height: 1.2;"}
+#### Calculate Deaths (dₓ) {style="color: blue;"}
 
-#### Calculate Deaths (dₓ){style="color: blue;"}
+$$ dₓ = lₓ \times qₓ $$ - **Example:** $$ d_{0-20} = 100,000 \times 0.005 = 500 $$
 
-$$ dₓ = lₓ \times qₓ $$
-- **Example:** $$ d_{0-20} = 100,000 \times 0.005 = 500 $$
-
-#### Calculate Survivors (lₓ){style="color: blue;"}
+#### Calculate Survivors (lₓ) {style="color: blue;"}
 
 -   $lₓ$ for next group = previous $lₓ - dₓ$
 -   **Example:** $$ l_{21-40} = 100,000 - 500 = 99,500 $$
 :::
-::::::
+:::
 
 ------------------------------------------------------------------------
 
 ## Steps in Constructing a Life Table (2)
 
-:::::: {.columns}
+::: columns
 ::: {.column width="45%" style="font-size: 22px; line-height: 1.2;"}
+#### Calculate Person-Years Lived (Lₓ) {style="color: blue;"}
 
+-   $Lₓ = \frac{lₓ + l_{x+1}}{2} \times n$
+-   Example: $L_{0-20} = \frac{100,000 + 99,500}{2} \times 20 = 1995000$
 
-#### Calculate Person-Years Lived (Lₓ){style="color: blue;"}
-- $Lₓ = \frac{lₓ + l_{x+1}}{2} \times n$
-- Example: $L_{0-20} = \frac{100,000 + 99,500}{2} \times 20 = 1995000$
-   
-   
-#### Calculate Total Years Remaining (Tₓ){style="color: blue;"}
-- $Tₓ$= Sum of all subsequent $Lₓ$ values.
+#### Calculate Total Years Remaining (Tₓ) {style="color: blue;"}
 
-#### Derive Life Expectancy (eₓ){style="color: blue;"}
-- $eₓ = \frac{Tₓ}{lₓ}$
-- Represents average remaining years of life for individuals entering each age group.
+-   $Tₓ$= Sum of all subsequent $Lₓ$ values.
+
+#### Derive Life Expectancy (eₓ) {style="color: blue;"}
+
+-   $eₓ = \frac{Tₓ}{lₓ}$
+-   Represents average remaining years of life for individuals entering each age group.
 :::
-::: {.column width="45%" style="font-size: 22px; line-height: 1.2;"}
 
+::: {.column width="45%" style="font-size: 22px; line-height: 1.2;"}
 ```{r}
 library(knitr)
 life_table <- data.frame(
@@ -353,94 +351,87 @@ life_table <- data.frame(
 )
 kable(life_table)
 ```
-
-
 :::
-::::::
-
-
-------------------------------------------------------------------------
-
-# Years of Life Lost 
-- Years of Life Lost (YLL) quantifies the impact of premature mortality in a population.
-- Used in public health to evaluate disease burden and prioritize interventions.
+:::
 
 ------------------------------------------------------------------------
 
-## Methodology for Calculating YLL{style="color: teal;"}
+# Years of Life Lost
 
-#### Definition of Premature Mortality Age{style="color: blue;"}
-- Premature mortality is defined relative to a threshold age, typically the average life expectancy.
-- For this example, we use **75 years**.
-
-#### Identification of Age at Death{style="color: blue;"}
-- Essential for determining premature deaths.
-- Each death’s impact varies depending on age at death.
+-   Years of Life Lost (YLL) quantifies the impact of premature mortality in a population.
+-   Used in public health to evaluate disease burden and prioritize interventions.
 
 ------------------------------------------------------------------------
 
-#### Calculation of Individual YLL{style="color: blue;"}
-- Formula:
-  $\text{YLL} = T - a_i$
-  where:
-  - $T$ is the threshold age,
-  - $a_i$ is the individual's age at death.
+## Methodology for Calculating YLL {style="color: teal;"}
 
-#### Summation of YLL{style="color: blue;"}
-- Total population impact calculated as:
-  $\text{Total YLL} = \sum \text{YLL}_i$
+#### Definition of Premature Mortality Age {style="color: blue;"}
+
+-   Premature mortality is defined relative to a threshold age, typically the average life expectancy.
+-   For this example, we use **75 years**.
+
+#### Identification of Age at Death {style="color: blue;"}
+
+-   Essential for determining premature deaths.
+-   Each death's impact varies depending on age at death.
 
 ------------------------------------------------------------------------
 
-### Example Calculation{style="color: pink;"}
+#### Calculation of Individual YLL {style="color: blue;"}
+
+-   Formula: $\text{YLL} = T - a_i$ where:
+    -   $T$ is the threshold age,
+    -   $a_i$ is the individual's age at death.
+
+#### Summation of YLL {style="color: blue;"}
+
+-   Total population impact calculated as: $\text{Total YLL} = \sum \text{YLL}_i$
+
+------------------------------------------------------------------------
+
+### Example Calculation {style="color: pink;"}
 
 Consider three individuals dying at **ages 25, 35, and 60**, with a threshold of **75 years**:
 
-:::::: {.columns}
+::: columns
 ::: {.column width="45%"}
-- **Individual 1:**
-  - Age at death: 25
-  - YLL = 75 - 25 = **50 years**
-- **Individual 2:**
-  - Age at death: 35
-  - YLL = 75 - 35 = **40 years**
+-   **Individual 1:**
+    -   Age at death: 25
+    -   YLL = 75 - 25 = **50 years**
+-   **Individual 2:**
+    -   Age at death: 35
+    -   YLL = 75 - 35 = **40 years**
 :::
 
 ::: {.column width="45%"}
-- **Individual 3:**
-  - Age at death: 60
-  - YLL = 75 - 60 = **15 years**
-
-- **Total YLL:**
-  $50 + 40 + 15 = 105 \text{ years}$
-  
+-   **Individual 3:**
+    -   Age at death: 60
+    -   YLL = 75 - 60 = **15 years**
+-   **Total YLL:** $50 + 40 + 15 = 105 \text{ years}$
 :::
-::::::
+:::
 
 ------------------------------------------------------------------------
 
-### Discussion{style="color: teal;"}
+### Discussion {style="color: teal;"}
 
-- The **105 years of YLL** highlight the burden of premature deaths.
-- Helps health authorities prioritize interventions.
-- Modifications include:
-  - Discounting future years,
-  - Weighting younger deaths more heavily,
-  - Adjusting for epidemiological and demographic context.
-- *Let's look at Box 2.5 in the book*.
-
-
+-   The **105 years of YLL** highlight the burden of premature deaths.
+-   Helps health authorities prioritize interventions.
+-   Modifications include:
+    -   Discounting future years,
+    -   Weighting younger deaths more heavily,
+    -   Adjusting for epidemiological and demographic context.
+-   *Let's look at Box 2.5 in the book*.
 
 ------------------------------------------------------------------------
 
-### Summary{style="color: teal;"}
+### Summary {style="color: teal;"}
 
-- Crude Death Rate (CDR) and Case Fatality Rate (CFR) provide baseline mortality measures.
-- Standardized Mortality Ratio (SMR) adjusts for age distribution differences.
-- Life tables are constructed step-by-step to estimate life expectancy at various ages.
-- **Years of Life Lost (YLL)** quantifies premature mortality and is crucial for measuring disease burden.
-- YLL helps prioritize public health interventions by identifying the most significant sources of early death.
-
+-   Crude Death Rate (CDR) and Case Fatality Rate (CFR) provide baseline mortality measures.
+-   Standardized Mortality Ratio (SMR) adjusts for age distribution differences.
+-   Life tables are constructed step-by-step to estimate life expectancy at various ages.
+-   **Years of Life Lost (YLL)** quantifies premature mortality and is crucial for measuring disease burden.
+-   YLL helps prioritize public health interventions by identifying the most significant sources of early death.
 
 ------------------------------------------------------------------------
 
@@ -493,53 +484,54 @@ Consider three individuals dying at **ages 25, 35, and 60**, with a threshold of
     -   Need for long-term care services.
     -   Redesign of healthcare systems.
 
-
 ------------------------------------------------------------------------
-
-
 
 ## [**Book exercise**]{style="color: teal;"}
 
 ::: columns
-
 ::: {.column width="50%"}
-
 ### <small>**Exercise 2.1: State of the Population**</small>
 
-<small>
-In the 2000 census, the total population of the United States was 281,423,000, with the following age-sex distribution (rounded to the nearest thousand):
+<small> In the 2000 census, the total population of the United States was 281,423,000, with the following age-sex distribution (rounded to the nearest thousand):
 
 | Age Group | Male Population | Female Population | Total Population |
-|-----------|---------------|----------------|----------------|
-| 0–1       | 1,949,000      | 1,857,000       | 3,806,000       |
-| 1–4       | 7,862,000      | 7,508,000       | 15,370,000      |
-| 5–14      | 21,044,000     | 20,034,000      | 41,078,000      |
-| 15–44     | 62,647,000     | 61,577,000      | 124,224,000     |
-| 45–64     | 30,143,000     | 31,810,000      | 61,953,000      |
-| 65+       | 14,410,000     | 20,582,000      | 34,992,000      |
-| **Total** | **138,055,000** | **143,368,000** | **281,423,000** |
-</small>
+|-----------|-----------------|-------------------|------------------|
+| 0--1      | 1,949,000       | 1,857,000         | 3,806,000        |
+| 1--4      | 7,862,000       | 7,508,000         | 15,370,000       |
+| 5--14     | 21,044,000      | 20,034,000        | 41,078,000       |
+| 15--44    | 62,647,000      | 61,577,000        | 124,224,000      |
+| 45--64    | 30,143,000      | 31,810,000        | 61,953,000       |
+| 65+       | 14,410,000      | 20,582,000        | 34,992,000       |
+| **Total** | **138,055,000** | **143,368,000**   | **281,423,000**  |
 
+</small>
 :::
 
 ::: {.column width="50%"}
-
 ### <small>**Calculations**</small>
+
 <small>
 
-- (a) **Proportion of the Elderly (65+ years) in the Population**  
+-   
 
-- (b) **Proportion of the Young (0–14 years) in the Population**  
+    (a) **Proportion of the Elderly (65+ years) in the Population**
 
-- (c) **Sex Ratio in Age Group 0–14 (expressed as 100 males per females)**  
+-   
 
-- (d) **Sex Ratio in Age Group 65+ (expressed as males per 100 females)**  
+    (b) **Proportion of the Young (0--14 years) in the Population**
+
+-   
+
+    (c) **Sex Ratio in Age Group 0--14 (expressed as 100 males per females)**
+
+-   
+
+    (d) **Sex Ratio in Age Group 65+ (expressed as males per 100 females)**
 
 </small>
-
+:::
 :::
 
-:::
 ------------------------------------------------------------------------
 
 ## [**At home exercise**]{style="color: teal;"}
@@ -550,11 +542,9 @@ In the 2000 census, the total population of the United States was 281,423,000, w
 -   Predict changes over 20 years based on fertility and mortality trends.
 -   [fertility trend and mortality](https://data.worldbank.org/indicator/SP.DYN.TFRT.IN){.uri}
 
-
 $$
 P(t) = P_0 \times \left(1 + \frac{B - D}{1000} \right)^t
-$$ 
-
+$$
 
 -   $P(t)$: The **population** at time $t$, after $t$ years.
 -   $P_0$: The **current population** (the population at time $t = 0$).
@@ -583,9 +573,14 @@ $$
 
 ## [**References**]{style="color: teal;"}
 
-1. Young, T. K. (2004). *Population Health: Concepts and Methods.*
-2. WHO Reports on Health Metrics.
-3. National Center for Health Statistics.
-4. Preston, S. H. (1975). *The changing relation between mortality and level of economic development.* Population Studies, 29(2), 231-248.
-5. Omran, A. R. (1971). *The Epidemiologic Transition: A Theory of the Epidemiology of Population Change.* The Milbank Quarterly, 49(4), 509–38.
+
+-  Young, T. K. (2004). *Population Health: Concepts and Methods.*
+-  WHO Reports on Health Metrics.
+-  National Center for Health Statistics.
+-  Preston, S. H. (1975). *The changing relation between mortality and level of economic development.* Population Studies, 29(2), 231-248.
+-  Omran, A. R. (1971). *The Epidemiologic Transition: A Theory of the Epidemiology of Population Change.* The Milbank Quarterly, 49(4), 509--38.
+
+
+
+
 
